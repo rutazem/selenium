@@ -1,0 +1,29 @@
+{
+  "name": "selenium-javascript",
+  "version": "1.0.0",
+  "description": "Basic setup for selenium tests with js",
+  "main": "index.js",
+  "scripts": {
+    "run:chrome": "node run.js",
+    "run:firefox": "PATH=$PATH:`pwd`/webdriver node run-firefox.js",
+    "test": "jest",
+    "test:chrome": "BROWSER=chrome jest",
+    "test:firefox": "BROWSER=firefox PATH=$PATH:`pwd`/webdriver jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haimchen/selenium-javascript.git"
+  },
+  "author": " <Sarah Wachs>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haimchen/selenium-javascript/issues"
+  },
+  "homepage": "https://github.com/Haimchen/selenium-javascript#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
